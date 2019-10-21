@@ -15,6 +15,8 @@ In our case, accurately predicting the people who will return in 30 days means m
 ## Method and result:
 We explored a file containing the information about more than 38,000 reception records from 5 hospitals, including basic information of patients, reception time, acuity of illness at the arrival, diagnosis result and details, charge, financial method for medical treatment, and whether return the hospital in 30 days. We pre-processed data by removing error records and missing values by deleting some columns and rows, by setting numeric variables to bins, and by aggregating some categories with just a few observations to one category.  
 
+![Image of DataInsight](https://github.com/shenzijian/Prediction-of-Hospital-Readmission/blob/master/data%20insights.png)
+
 After cleaning data, we split the original training dataset, 70% to fit models, and 30% to choose the parameters of each type of model. We run 6 models in total, including logistic, boosting, random forest, LDA, lasso and KNN. To achieve our goal, we evaluate these models by enhancing the true positive rate of our prediction as far as possible under the condition of not a very bad accuracy performance of prediction. 
 
 After determining the best parameters of each model, we evaluated these models by predicting test dataset. In the end, lasso model performed best, because it has the highest positive rate without penalizing accuracy too much.
