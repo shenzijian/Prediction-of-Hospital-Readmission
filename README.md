@@ -21,5 +21,29 @@ After cleaning data, we split the original training dataset, 70% to fit models, 
 
 After determining the best parameters of each model, we evaluated these models by predicting test dataset. In the end, lasso model performed best, because it has the highest positive rate without penalizing accuracy too much.
 
+_example of Random Forest model parameter selection_
+ntree | mtry | accuracy | TPR
+----- | ---- | -------- | ---
+100	| 3	| 0.6787664	| 0.5531365
+100	| 4	| 0.6342795	| 0.6501845
+100	| 5	| 0.6175400	| 0.6782288
+100	| 6	| 0.6129003	| 0.6822878
+500	| 3	| 0.6772198	| 0.5630996
+500	| 4	| 0.6316412	| 0.6531365
+500	| 5	| 0.6140830	| 0.6856089
+500	| 6	| 0.6036208	| 0.6922509
+1000 | 3 | 0.6782205	| 0.5675277
+1000	| 4	| 0.6324600	| 0.6542435
+1000	| 5	| 0.6114447	| 0.6800738
+1000	| 6	| 0.6045306	| 0.6955720
+1500	| 3	| 0.6764920	| 0.5715867
+1500	| 4	| 0.6337336	| 0.6549815
+1500	| 5	| 0.6107169	| 0.6878229
+1500	| 6	| 0.6038028	| 0.6937269
+
+![Image of Random Forest spider plot]https://github.com/shenzijian/Prediction-of-Hospital-Readmission/blob/master/random%20forest%20spider%20plot.png
+
+
+
 In a nutshell, we will strongly suggest hospitals to use our lasso model to predict whether a patient will return the hospital in 30 days, because we can predict nearly 70% of the actual return patients. Then hospitals can make preparation in advance to reduce the unplanned admission and readmission. 
  
