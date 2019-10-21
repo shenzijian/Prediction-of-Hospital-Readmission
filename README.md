@@ -21,7 +21,8 @@ After cleaning data, we split the original training dataset, 70% to fit models, 
 
 After determining the best parameters of each model, we evaluated these models by predicting test dataset. In the end, lasso model performed best, because it has the highest positive rate without penalizing accuracy too much.
 
-_example of Random Forest model parameter selection_
+**_example of Random Forest model parameter selection_**  
+
 ntree | mtry | accuracy | TPR
 ----- | ---- | -------- | ---
 100	| 3	| 0.6787664	| 0.5531365
@@ -41,9 +42,11 @@ ntree | mtry | accuracy | TPR
 1500	| 5	| 0.6107169	| 0.6878229
 1500	| 6	| 0.6038028	| 0.6937269
 
-![Image of Random Forest spider plot](https://github.com/shenzijian/Prediction-of-Hospital-Readmission/blob/master/random%20forest%20spider%20plot.png)
 
 
+![Image of Random Forest spider plot](https://github.com/shenzijian/Prediction-of-Hospital-Readmission/blob/master/random%20forest%20spider%20plot.png)  
 
+**_Comparing models  and conclusion_**
 
+![Image of model comparsion](https://github.com/shenzijian/Prediction-of-Hospital-Readmission/blob/master/model%20camparison.png)
  
