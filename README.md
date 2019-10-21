@@ -41,9 +41,9 @@ ntree | mtry | accuracy | TPR
 1500	| 5	| 0.6107169	| 0.6878229
 1500	| 6	| 0.6038028	| 0.6937269
 
-![Image of Random Forest spider plot]https://github.com/shenzijian/Prediction-of-Hospital-Readmission/blob/master/random%20forest%20spider%20plot.png
+![Image of Random Forest spider plot](https://github.com/shenzijian/Prediction-of-Hospital-Readmission/blob/master/random%20forest%20spider%20plot.png)
 
 
 
-In a nutshell, we will strongly suggest hospitals to use our lasso model to predict whether a patient will return the hospital in 30 days, because we can predict nearly 70% of the actual return patients. Then hospitals can make preparation in advance to reduce the unplanned admission and readmission. 
+
  
