@@ -1,7 +1,7 @@
 # Prediction-of-Hospital-Readmission
-Healthcare project
 
-Executive summary
+
+## Executive summary
 
 Background:
 Nowadays hospitals are struggling to meet demand of a growing quantity of people seeking medical treatment. Unplanned hospital admissions (HUA) are a problem for hospitals internationally as they are costly and disruptive to elective health care, and increase waiting lists. Readmission, which is the estimate of the rate of unplanned return to hospital in the 30 days after discharge, is one of the 7 main criterions that measure the overall ratings of the hospitals’ quality.  A high readmission lowers the rating of a hospital, because it means that the patients are not cured well at the first time for a large proportion of diseases that neither chronic nor deadly rapidly. Furthermore, Centers for Medicare & Medicaid Services established the “Hospital Readmissions Reduction Program” which aims to improve quality of care for patients and reduce healthcare spending by applying payment penalties to hospitals that have more than expected readmission rates for certain conditions. Therefore, make more patients readmission not only won’t bring higher income to hospital, but will cause negative impact on both reputation of hospitals and the economy because of fewer charges on the same services compared with those from the first time treatment.
@@ -12,7 +12,7 @@ If hospitals can successfully predict whether a patient will return to the hospi
 
 In our case, accurately predicting the people who will return in 30 days means making the true positive rate of our prediction (which means predict the maximum proportion of all the patients who actually return to the hospital in 30 days) as high as possible, but do not penalty our prediction accuracy (which means predict patients who will both return and not return in 30 days as far as possible) too much because it is also meaningless to predict almost patients to return patients. 
 
-Method and result:
+## Method and result:
 We explored a file containing the information about more than 38,000 reception records from 5 hospitals, including basic information of patients, reception time, acuity of illness at the arrival, diagnosis result and details, charge, financial method for medical treatment, and whether return the hospital in 30 days. We pre-processed data by removing error records and missing values by deleting some columns and rows, by setting numeric variables to bins, and by aggregating some categories with just a few observations to one category.  
 
 After cleaning data, we split the original training dataset, 70% to fit models, and 30% to choose the parameters of each type of model. We run 6 models in total, including logistic, boosting, random forest, LDA, lasso and KNN. To achieve our goal, we evaluate these models by enhancing the true positive rate of our prediction as far as possible under the condition of not a very bad accuracy performance of prediction. 
